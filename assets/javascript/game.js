@@ -28,7 +28,7 @@ function updateDisplay() {
     displayLosses.textContent = "Losses: " + losses;
     displayGuesses.textContent = "Guesses Left: " + totalGuesses;
     lettersUsed.textContent = "Letters guessed so far: " + guessArr;
-    wordToGuess.textContent = displayArr;
+    wordToGuess.textContent = displayArr.join(" ");
 }
 
 //function to pick new word from the list
@@ -64,8 +64,8 @@ function generateNewWord () {
 //initialize game
 [gameWord,displayArr] = generateNewWord(); //use destructuring assignments (wow)
 
-console.log(gameWord);
-console.log(displayArr);
+//console.log(gameWord);
+//console.log(displayArr);
 
 //define game loop
 document.onkeyup = function(event) {
@@ -105,13 +105,14 @@ document.onkeyup = function(event) {
             //now replace dashes with location of these letters
             for(var i=0;i<instances.length;i++)
                 displayArr[instances[i]] = guess;   //replace dash with its letter
-            console.log(lettersLeft);
+            //console.log(displayArr);
+            //console.log(lettersLeft);
             instances = []; //clear array
             updateDisplay();
         }
         else if (gameWord.indexOf(guess) === -1 && totalGuesses ===1) //did we fail to find a letter and run out of guesses
         {
-            console.log("got here didnt guess and outta guess");
+            //console.log("got here didnt guess and outta guess");
             losses++;
             alert("Sorry the word you were trying to guess was "+ gameWord);    //display game word
             updateDisplay();
