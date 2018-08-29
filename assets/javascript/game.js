@@ -108,7 +108,7 @@ document.onkeyup = function(event) {
             instances = []; //clear array
             updateDisplay();
         }
-        else if (gamesArr.indexOf(guess) === -1 && totalGuesses ===1) //did we fail to find a letter and run out of guesses
+        else if (gameWord.indexOf(guess) === -1 && totalGuesses ===1) //did we fail to find a letter and run out of guesses
         {
             console.log("got here didnt guess and outta guess");
             losses++;
