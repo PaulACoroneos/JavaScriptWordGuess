@@ -114,6 +114,7 @@ document.onkeyup = function(event) {
             losses++;
             alert("Sorry the word you were trying to guess was "+ gameWord);    //display game word
             resetGame();
+            updateDisplay();
         }
         else{   //didn't guess but have guesses left
             console.log("didnt guess but have guesses left")
