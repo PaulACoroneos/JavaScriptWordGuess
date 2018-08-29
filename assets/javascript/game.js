@@ -36,7 +36,8 @@ function generateNewWord () {
 
     guessArr = [];  //clear array
     displayArr = [];
-    totalGuesses = 10;  //reset guess counter
+    totalGuesses = 10;  //reset counters
+    lettersLeft=0;
 
     if (gamesArr.length ===0)   //did we run out of words to guess?
     {
@@ -104,7 +105,7 @@ document.onkeyup = function(event) {
             //now replace dashes with location of these letters
             for(var i=0;i<instances.length;i++)
                 displayArr[instances[i]] = guess;   //replace dash with its letter
-
+            console.log(lettersLeft);
             instances = []; //clear array
             updateDisplay();
         }
