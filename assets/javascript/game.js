@@ -3,6 +3,27 @@ var gamesArrPermanent = ["final fantasy","dragon quest","call of duty","medal of
 var gamesArr = [];
 gamesArr = gamesArrPermanent;   //make a copy to local arr. This is so user could replay game over and ove
 
+// start converting to list array with other elements to display
+var gamesArrPermanentAll = [
+    { game: "final fantasy", url:"https://en.wikipedia.org/wiki/Final_Fantasy",image:"./assets/images/final_fantasy.jpg"},
+    { game: "dragon quest", url:"https://en.wikipedia.org/wiki/Dragon_Quest", image:"./assets/images/dragon_quest.jpg"},
+    { game: "call of duty", url:"https://en.wikipedia.org/wiki/Call_of_Duty", image:"./assets/images/call_of_duty.jpg"},
+    { game: "medal of honor", url:"https://en.wikipedia.org/wiki/Medal_of_Honor_(video_game_series)",image:"./assets/images/medal_of_honor.jpg"},
+    { game: "halo", url:"https://en.wikipedia.org/wiki/Halo_(series)", image:"./assets/images/halo.jpg"},
+    { game: "gears of war", url:"https://en.wikipedia.org/wiki/Gears_of_War", image:"./assets/images/gear_of_war.jpg"},
+    { game: "mario",url:"https://en.wikipedia.org/wiki/Mario",image="./assets/images/mario.jpg"},
+    { game: "the legend of zelda", url:"https://en.wikipedia.org/wiki/The_Legend_of_Zelda",image="./assets/images/the_legend_of_zelda.jpg"},
+    { game: "pokemon", url:"https://en.wikipedia.org/wiki/Pok%C3%A9mon", image="./assets/images/pokemon.jpg"},
+    { game: "pikmin", url:"https://en.wikipedia.org/wiki/Pikmin", image="./assets/images/pikmin.jpg"},
+    { game: "sonic the hedgehog", url:"https://en.wikipedia.org/wiki/Sonic_the_Hedgehog", image="./assets/images/sonic_the_hedgehog.jpg"},
+    { game: "grand theft auto", url:"https://en.wikipedia.org/wiki/Grand_Theft_Auto", image="./assets/images/grand_theft_auto.jpg"},
+    { game: "fallout", url:"https://en.wikipedia.org/wiki/Fallout_(series)", image="./assets/images/fallout.jpg"},
+    { game: "crash bandicoot", url:"https://en.wikipedia.org/wiki/Crash_Bandicoot", image="./assets/images/crash_bandicoot.jpg"},
+    { game: "jak and daxter", url:"https://en.wikipedia.org/wiki/Jak_and_Daxter", image="./assets/images/jak_and_daxter.jpg"},
+    { game: "rachet and clank", url:"https://en.wikipedia.org/wiki/Ratchet_%26_Clank", image="./assets/images/rachet_clank.jpg"},
+    { game: "metroid", url:"https://en.wikipedia.org/wiki/Metroid", image="./assets/images/metroid.jpg"},
+]
+
 //initialize game variables
 var wins=0;
 var losses=0;
