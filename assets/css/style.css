@@ -1,0 +1,37 @@
+html,body {
+    height:100vh;
+    background-color:black;
+    font-family: '8BITWONDERNominal'; 
+    font-weight: normal; 
+    font-style: normal; 
+}
+h1 {
+    font-size:40px;
+    color:white;
+}
+h2 {
+    color:white;
+}
+#body-text {
+    color:whitesmoke;
+    font-size:22px;
+}
+#wins {
+    color:yellow;
+    font-size:18px;
+}
+#losses {
+    color:red;
+    font-size:18px;
+}
+#guesses {
+    color:lightseagreen;
+    font-size:18px;
+}
+#lettersUsed {
+    color:orange;
+    font-size:18px;
+}
+.dashed-container {
+    border: dotted 2px white;
+}

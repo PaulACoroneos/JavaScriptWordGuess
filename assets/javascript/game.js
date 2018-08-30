@@ -59,7 +59,7 @@ function updateDisplay(adders) {
     if(adders)  //did we reach end of iteration of game?
     {
         //update image and URL to wikipedia link
-        displayURL.textContent = "Wikipedia: " + gamesURL;  //wiki link
+        displayURL.textContent = "Wikipedia link: " + gamesURL;  //wiki link
         displayIMG.image = gamesIMG;    //image
     }
 }
