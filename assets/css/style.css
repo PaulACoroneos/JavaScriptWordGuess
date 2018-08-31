@@ -11,6 +11,7 @@ h1 {
 }
 h2 {
     color:white;
+    font-size:28px;
 }
 #body-text {
     color:whitesmoke;
@@ -34,4 +35,12 @@ h2 {
 }
 .dashed-container {
     border: dotted 2px white;
+}
+#wordToGuess {
+    font-size:32px;
+    color:white;
+}
+#link-text {
+    color:white;
+    font-size:22px;
 }

@@ -56,11 +56,13 @@ function updateDisplay(adders) {
     displayGuesses.textContent = "Guesses Left: " + totalGuesses;
     lettersUsed.textContent = "Letters guessed so far: " + guessArr;
     wordToGuess.textContent = displayArr.join("");
+    console.log(gamesURL);
+    console.log(gamesIMG);
     if(adders)  //did we reach end of iteration of game?
     {
         //update image and URL to wikipedia link
-        displayURL.textContent = "Wikipedia link: " + gamesURL;  //wiki link
-        displayIMG.image = gamesIMG;    //image
+        displayURL.setAttribute("href",gamesURL); //wiki link
+        displayIMG.setAttribute("src",gamesIMG);    //image
     }
 }
 
@@ -72,17 +74,16 @@ function generateNewWord () {
     totalGuesses = 10;  //reset counters
     lettersLeft=0;
 
-    if (gamesArr.length ===0)   //did we run out of words to guess?
-    {
-        alert("I ran out of words! But I will cycle through them again.");
-        gamesArr = gamesArrPermanent;   //refill array from master copy
-    }
+    // if (gamesArr.length ===0)   //did we run out of words to guess?
+    // {
+    //     alert("I ran out of words! But I will cycle through them again.");
+    //     gamesArr = gamesArrPermanent;   //refill array from master copy
+    // }
     var rando = Math.floor(Math.random()*gamesArr.length);
     gameWord = gamesArr[rando].game; //pick initial random word
     gamesURL = gamesArr[rando].url;
     gamesIMG = gamesArr[rando].image;
-    console.log(gamesIMG);
-    gamesArr.splice(gamesArr.indexOf(gameWord), 1); //remove word from list of possible words
+    //gamesArr.splice(gamesArr.indexOf(gameWord), 1); //remove word from list of possible words
     for(var i=0;i<gameWord.length;i++)
         if(charset.indexOf(gameWord[i]) >-1)  //if not a whitespace (valid english letter)
         {
@@ -131,7 +132,7 @@ document.onkeyup = function(event) {
     if(skip){
         if(gameWord.indexOf(guess) > -1 ) // is user guessed character in the word?
         {
-            console.log("got here guessed it");
+            //console.log("got here guessed it");
             //find all instances of user guessed letter in word
             for(var i=0;i<gameWord.length;i++)
                 if(gameWord[i] === guess)
@@ -157,7 +158,7 @@ document.onkeyup = function(event) {
             
         }
         else{   //didn't guess but have guesses left
-            console.log("didnt guess but have guesses left")
+            //console.log("didnt guess but have guesses left")
             totalGuesses--;
             updateDisplay(0);
         }
