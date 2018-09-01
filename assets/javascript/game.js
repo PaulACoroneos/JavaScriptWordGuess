@@ -20,7 +20,7 @@ var gamesArrPermanent = [
     { game: "fallout", url:"https://en.wikipedia.org/wiki/Fallout_(series)", image:"assets/images/fallout.jpg"},
     { game: "crash bandicoot", url:"https://en.wikipedia.org/wiki/Crash_Bandicoot", image:"assets/images/crash_bandicoot.jpg"},
     { game: "jak and daxter", url:"https://en.wikipedia.org/wiki/Jak_and_Daxter", image:"assets/images/jak_and_daxter.jpg"},
-    { game: "rachet and clank", url:"https://en.wikipedia.org/wiki/Ratchet_%26_Clank", image:"assets/images/rachet_clank.jpg"},
+    { game: "rachet and clank", url:"https://en.wikipedia.org/wiki/Ratchet_%26_Clank", image:"assets/images/rachet_and_clank.jpg"},
     { game: "metroid", url:"https://en.wikipedia.org/wiki/Metroid", image:"assets/images/metroid.jpg"},
 ]
 
@@ -95,7 +95,7 @@ function generateNewWord () {
             lettersLeft++;   //increment lettersLeft counter
         }
         else
-            displayArr.push("");
+            displayArr.push("   "); //make space more obvious
 
     updateDisplay();
     return [gameWord,displayArr]; //return word to guess and "dashed version"
