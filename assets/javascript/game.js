@@ -5,24 +5,26 @@
 
 // start converting to list array with other elements to display
 var gamesArrPermanent = [
-    { game: "final fantasy", url:"https://en.wikipedia.org/wiki/Final_Fantasy",image:"./assets/images/final_fantasy.jpg"},
-    { game: "dragon quest", url:"https://en.wikipedia.org/wiki/Dragon_Quest", image:"./assets/images/dragon_quest.jpg"},
-    { game: "call of duty", url:"https://en.wikipedia.org/wiki/Call_of_Duty", image:"./assets/images/call_of_duty.jpg"},
-    { game: "medal of honor", url:"https://en.wikipedia.org/wiki/Medal_of_Honor_(video_game_series)",image:"./assets/images/medal_of_honor.jpg"},
-    { game: "halo", url:"https://en.wikipedia.org/wiki/Halo_(series)", image:"./assets/images/halo.jpg"},
-    { game: "gears of war", url:"https://en.wikipedia.org/wiki/Gears_of_War", image:"./assets/images/gear_of_war.jpg"},
-    { game: "mario",url:"https://en.wikipedia.org/wiki/Mario",image:"./assets/images/mario.jpg"},
-    { game: "the legend of zelda", url:"https://en.wikipedia.org/wiki/The_Legend_of_Zelda",image:"./assets/images/the_legend_of_zelda.jpg"},
-    { game: "pokemon", url:"https://en.wikipedia.org/wiki/Pok%C3%A9mon", image:"./assets/images/pokemon.jpg"},
-    { game: "pikmin", url:"https://en.wikipedia.org/wiki/Pikmin", image:"./assets/images/pikmin.jpg"},
-    { game: "sonic the hedgehog", url:"https://en.wikipedia.org/wiki/Sonic_the_Hedgehog", image:"./assets/images/sonic_the_hedgehog.jpg"},
-    { game: "grand theft auto", url:"https://en.wikipedia.org/wiki/Grand_Theft_Auto", image:"./assets/images/grand_theft_auto.jpg"},
-    { game: "fallout", url:"https://en.wikipedia.org/wiki/Fallout_(series)", image:"./assets/images/fallout.jpg"},
-    { game: "crash bandicoot", url:"https://en.wikipedia.org/wiki/Crash_Bandicoot", image:"./assets/images/crash_bandicoot.jpg"},
-    { game: "jak and daxter", url:"https://en.wikipedia.org/wiki/Jak_and_Daxter", image:"./assets/images/jak_and_daxter.jpg"},
-    { game: "rachet and clank", url:"https://en.wikipedia.org/wiki/Ratchet_%26_Clank", image:"./assets/images/rachet_clank.jpg"},
-    { game: "metroid", url:"https://en.wikipedia.org/wiki/Metroid", image:"./assets/images/metroid.jpg"},
+    { game: "final fantasy", url:"https://en.wikipedia.org/wiki/Final_Fantasy",image:"assets/images/final_fantasy.jpg"},
+    { game: "dragon quest", url:"https://en.wikipedia.org/wiki/Dragon_Quest", image:"assets/images/dragon_quest.jpg"},
+    { game: "call of duty", url:"https://en.wikipedia.org/wiki/Call_of_Duty", image:"assets/images/call_of_duty.jpg"},
+    { game: "medal of honor", url:"https://en.wikipedia.org/wiki/Medal_of_Honor_(video_game_series)",image:"assets/images/medal_of_honor.jpg"},
+    { game: "halo", url:"https://en.wikipedia.org/wiki/Halo_(series)", image:"assets/images/halo.jpg"},
+    { game: "gears of war", url:"https://en.wikipedia.org/wiki/Gears_of_War", image:"assets/images/gear_of_war.jpg"},
+    { game: "mario",url:"https://en.wikipedia.org/wiki/Mario",image:"assets/images/mario.jpg"},
+    { game: "the legend of zelda", url:"https://en.wikipedia.org/wiki/The_Legend_of_Zelda",image:"assets/images/the_legend_of_zelda.jpg"},
+    { game: "pokemon", url:"https://en.wikipedia.org/wiki/Pok%C3%A9mon", image:"assets/images/pokemon.jpg"},
+    { game: "pikmin", url:"https://en.wikipedia.org/wiki/Pikmin", image:"assets/images/pikmin.jpg"},
+    { game: "sonic the hedgehog", url:"https://en.wikipedia.org/wiki/Sonic_the_Hedgehog", image:"assets/images/sonic_the_hedgehog.jpg"},
+    { game: "grand theft auto", url:"https://en.wikipedia.org/wiki/Grand_Theft_Auto", image:"assets/images/grand_theft_auto.jpg"},
+    { game: "fallout", url:"https://en.wikipedia.org/wiki/Fallout_(series)", image:"assets/images/fallout.jpg"},
+    { game: "crash bandicoot", url:"https://en.wikipedia.org/wiki/Crash_Bandicoot", image:"assets/images/crash_bandicoot.jpg"},
+    { game: "jak and daxter", url:"https://en.wikipedia.org/wiki/Jak_and_Daxter", image:"assets/images/jak_and_daxter.jpg"},
+    { game: "rachet and clank", url:"https://en.wikipedia.org/wiki/Ratchet_%26_Clank", image:"assets/images/rachet_clank.jpg"},
+    { game: "metroid", url:"https://en.wikipedia.org/wiki/Metroid", image:"assets/images/metroid.jpg"},
 ]
+
+
 
 var gamesArr = gamesArrPermanent;
 
@@ -48,6 +50,8 @@ var wordToGuess = document.getElementById("wordToGuess");   //store word being g
 var lettersUsed = document.getElementById("lettersUsed");   //store letters guessed so far
 var displayURL = document.getElementById("display-url");
 var displayIMG = document.getElementById("display-img");
+
+console.log(displayURL);
 
 function updateDisplay(adders) {
     //display values to user
@@ -103,8 +107,8 @@ function generateNewWord () {
 
 //console.log(gameWord);
 //console.log(displayArr);
-console.log(gamesURL);
-console.log(gamesIMG);
+// console.log(gamesURL);
+// console.log(gamesIMG);
 //define game loop
 document.onkeyup = function(event) {
     
