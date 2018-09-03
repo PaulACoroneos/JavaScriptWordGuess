@@ -10,7 +10,7 @@ var gamesArrPermanent = [
     { game: "call of duty", url:"https://en.wikipedia.org/wiki/Call_of_Duty", image:"assets/images/call_of_duty.jpg"},
     { game: "medal of honor", url:"https://en.wikipedia.org/wiki/Medal_of_Honor_(video_game_series)",image:"assets/images/medal_of_honor.jpg"},
     { game: "halo", url:"https://en.wikipedia.org/wiki/Halo_(series)", image:"assets/images/halo.jpg"},
-    { game: "gears of war", url:"https://en.wikipedia.org/wiki/Gears_of_War", image:"assets/images/gear_of_war.jpg"},
+    { game: "gears of war", url:"https://en.wikipedia.org/wiki/Gears_of_War", image:"assets/images/gears_of_war.jpg"},
     { game: "mario",url:"https://en.wikipedia.org/wiki/Mario",image:"assets/images/mario.jpg"},
     { game: "the legend of zelda", url:"https://en.wikipedia.org/wiki/The_Legend_of_Zelda",image:"assets/images/the_legend_of_zelda.jpg"},
     { game: "pokemon", url:"https://en.wikipedia.org/wiki/Pok%C3%A9mon", image:"assets/images/pokemon.jpg"},
